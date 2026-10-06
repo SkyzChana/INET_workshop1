@@ -8,7 +8,7 @@ var orderModel = require('../models/order.model');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const {isAdmin, verifyToken} = require('../middleware/tokken.middleware');
+const {isAdmin, verifyToken} = require('../middleware/token.middleware');
 
 
 // login 1
