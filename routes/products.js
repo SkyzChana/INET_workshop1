@@ -159,7 +159,7 @@ router.post("/:id/orders", verifyToken, async function (req, res, next) {
     if (productData.count < count) {
       return res.status(400).send({
         status: "400",
-        message: `not enough product, product have ${productData.count}, product needed ${count}`,
+        message: `not enough product, product have ${productData.count}, product input ${count}`,
         data: null,
       });
     }
